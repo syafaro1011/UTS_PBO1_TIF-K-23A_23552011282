@@ -1,4 +1,4 @@
-package UTS_Kendaraan;
+package UTS.Manajemen_Transportasi;
 
 public class Kendaraan {
     private String platNomor;
@@ -8,21 +8,23 @@ public class Kendaraan {
     private String BahanBakar;
     private int jarak;
 
-    public Kendaraan(String platNomor, String model, int tahun, int kapasitas, String BahanBakar) {
+    public Kendaraan(String platNomor, String model, int tahun) {
         this.platNomor = platNomor;
         this.model = model;
         this.tahun = tahun;
-        this.kapasitas = kapasitas;
-        this.BahanBakar = BahanBakar;
     }
 
     // Getter dan Setter (Encapsulation)
-    public String getPlatNomor() {
+    public String getPlatNomor(){
         return platNomor;
     }
 
-    public void setPlatNomor(String platNomor) {
-        this.platNomor = platNomor;
+    public String getModel(){
+        return model;
+    }
+
+    public int getTahun(){
+        return tahun;
     }
 
     public int getKapasitas() {
@@ -49,21 +51,7 @@ public class Kendaraan {
         this.jarak = jarak;
     }
 
-    public String getModel() {
-        return model;
-    }
 
-    public void setModel(String model) {
-        this.model = model;
-    }
-    
-    public int getTahun() {
-        return tahun;
-    }
-
-    public void setTahun(int tahun) {
-        this.tahun = tahun;
-    }
 
     
     //polymorph

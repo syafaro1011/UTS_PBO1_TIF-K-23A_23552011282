@@ -1,8 +1,8 @@
-package UTS_Kendaraan;
+package UTS.Manajemen_Transportasi;
 
 class Motor extends Kendaraan {
-    public Motor(String platNomor, String model, int tahun, int kapasitas, String BahanBakar) {
-        super(platNomor, model, tahun, kapasitas, BahanBakar);
+    public Motor(String platNomor, String model, int tahun) {
+        super(platNomor, model, tahun);
     }
 
     @Override //berdasarkan bahan bakar

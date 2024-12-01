@@ -1,11 +1,11 @@
-package UTS_Kendaraan;
+package UTS.Manajemen_Transportasi;
 
 class Kereta_Api extends Kendaraan implements TransportasiUmum {
 
     private double tarif;
     
-        public Kereta_Api(String platNomor, String model, int tahun, int kapasitas, String BahanBakar, double tarif) {
-            super(platNomor, model, tahun, kapasitas, BahanBakar);
+        public Kereta_Api(String platNomor, String model, int tahun, double tarif) {
+            super(platNomor, model, tahun);
             this.tarif = tarif;
     }
     @Override
@@ -27,6 +27,10 @@ class Kereta_Api extends Kendaraan implements TransportasiUmum {
                 ", tahun " + getTahun() +
                 ", tarif per penumpang: " + tarif +
                 ", jumlah penumpang: " + getKapasitas());
+    }
+    @Override
+    public double hitungBiayaPerjalanan() {
+       return getKapasitas() * tarif;
     }
 
     

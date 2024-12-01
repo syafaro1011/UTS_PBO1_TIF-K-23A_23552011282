@@ -1,9 +1,9 @@
-package UTS_Kendaraan;
+package UTS.Manajemen_Transportasi;
 
 class Bus extends Kendaraan implements TransportasiUmum {
     private double tarif;
-    public Bus(String platNomor, String model, int tahun, int kapasitas, String BahanBakar, double tarif) {
-        super(platNomor, model, tahun, kapasitas, BahanBakar);
+    public Bus(String platNomor, String model, int tahun, double tarif) {
+        super(platNomor, model, tahun);
         this.tarif = tarif;
     }
 

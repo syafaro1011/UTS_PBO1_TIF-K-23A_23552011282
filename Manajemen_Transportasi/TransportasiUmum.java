@@ -1,4 +1,4 @@
-package UTS_Kendaraan;
+package UTS.Manajemen_Transportasi;
 
 interface TransportasiUmum {
 
